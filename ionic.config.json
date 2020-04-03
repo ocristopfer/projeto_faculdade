@@ -1,7 +1,8 @@
 {
   "name": "easy-fuel-ionic",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

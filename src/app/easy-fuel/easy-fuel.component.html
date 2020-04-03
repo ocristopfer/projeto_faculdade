@@ -1,0 +1,35 @@
+<div id="container">
+
+    <ion-item>
+        <ion-label position="floating">Valor da Gasolina</ion-label>
+        <ion-input (click)="limparGas()" [(ngModel)]="gasolina"></ion-input>
+        <ion-button color="danger" slot="end">G
+        </ion-button>
+        <!--ion-icon name="cash-outline" slot="end"></ion-icon-->
+    </ion-item>
+    <i class="fas fa-gas-pump"></i>
+
+    <ion-item>
+        <ion-label position="floating">Valor do Ácool</ion-label>
+        <ion-input (click)="limparAlcool()" [(ngModel)]="alcool"></ion-input>
+        <ion-button color="success" slot="end">A
+        </ion-button>
+        <!--ion-icon name="cash-outline" slot="end"></ion-icon-->
+    </ion-item>
+
+    <div style="padding-top: 10px;">
+        <ion-button (click)="calcular()" color="primary">Calcular</ion-button>
+    </div>
+
+
+    <div *ngIf="mostrarResultado" style="padding-top: 30px;">
+        <span>De acordo com os calculos é mais vantajoso utilizar:</span>
+        <p></p>
+        <ion-button color="{{resultadoCor}}">{{resultado}}</ion-button>
+    </div>
+
+
+
+
+
+</div>
