@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
-import { SelectAll } from '../directivas/select-all';
 
 @Component({
   selector: 'app-easy-fuel',
