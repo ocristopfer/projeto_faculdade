@@ -2,7 +2,7 @@
 
     <ion-item>
         <ion-label position="floating">Valor da Gasolina</ion-label>
-        <ion-input (click)="limparGas()" [(ngModel)]="gasolina"></ion-input>
+        <ion-input type="number" pattern="[0-9]*" (click)="limparGas()" [(ngModel)]="gasolina"></ion-input>
         <ion-button color="danger" slot="end">G
         </ion-button>
         <!--ion-icon name="cash-outline" slot="end"></ion-icon-->
@@ -11,7 +11,7 @@
 
     <ion-item>
         <ion-label position="floating">Valor do Ácool</ion-label>
-        <ion-input (click)="limparAlcool()" [(ngModel)]="alcool"></ion-input>
+        <ion-input type="number" pattern="[0-9]*" (click)="limparAlcool()" [(ngModel)]="alcool"></ion-input>
         <ion-button color="success" slot="end">A
         </ion-button>
         <!--ion-icon name="cash-outline" slot="end"></ion-icon-->

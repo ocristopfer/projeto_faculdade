@@ -1,12 +1,69 @@
 <ion-header>
     <ion-toolbar>
-        <ion-button slot="start" expand="block" fill="clear" href="/tabs/tab3" routerDirection="root">
+        <ion-title>Só de Cenoura</ion-title>
+        <ion-button slot="end" expand="block" fill="clear" href="" routerDirection="root">
             <ion-icon name="arrow-back"></ion-icon>
         </ion-button>
-        <ion-title>exercicio02</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-tabs>
+        <ion-tab-bar slot="top">
+            <ion-tab-button tab="schedule">
+                <!--ion-icon name="calendar"></ion-icon-->
+                <ion-label>Bolos</ion-label>
 
+            </ion-tab-button>
+
+            <ion-tab-button tab="speakers">
+                <ion-icon name="beer-outline"></ion-icon>
+                <ion-label>Bebidas</ion-label>
+            </ion-tab-button>
+
+        </ion-tab-bar>
+    </ion-tabs>
+
+
+
+    <div id="bolos" class="section">
+        <h6 class="container brown-text">Fatia</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Só de Cenoura</a>
+            <a class="collection-item waves-effect black-text">Com Nutella</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado</a>
+        </div>
+
+        <h6 class="container brown-text">Inteiro</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Só de Cenoura inteiro</a>
+            <a class="collection-item waves-effect black-text">Com Nutella inteiro</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro inteiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado inteiro</a>
+        </div>
+    </div>
+
+    <div id="bebidas" class="section">
+        <h6 class="container brown-text">Cafés</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Espresso</a>
+            <a class="collection-item waves-effect black-text">Capuccino</a>
+            <a class="collection-item waves-effect black-text">Mocachino</a>
+        </div>
+
+        <h6 class="container brown-text">Refrigerantes</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Soda</a>
+            <a class="collection-item waves-effect black-text">Guaraná</a>
+            <a class="collection-item waves-effect black-text">Coca</a>
+        </div>
+
+        <h6 class="container brown-text">Sucos</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Melancia</a>
+            <a class="collection-item waves-effect black-text">Tangerina</a>
+            <a class="collection-item waves-effect black-text">Limão</a>
+        </div>
+    </div>
 </ion-content>
